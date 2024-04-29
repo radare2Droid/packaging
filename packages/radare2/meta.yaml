@@ -1,0 +1,16 @@
+{% set version = "5.9.0" %}
+
+package:
+  name: radare2
+  version: {{ version }}
+
+source:
+  url: https://github.com/radareorg/radare2/archive/refs/tags/{{ version }}.tar.gz
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - ninja 1.11.1.1
+    - meson 1.4.0
